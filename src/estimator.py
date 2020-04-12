@@ -41,12 +41,7 @@ print("Total number of severe impact are {} cases.".format(severeImpact.currentl
             
 #      infectionByRequestedTime = currentlyInfected* (2**day)
 
-'''
-def impact(reportedCases):
-      currentlyInfected = reportedCases*10
-      return currentlyInfected
-impact.currentlyInfected
-'''
+
 '''
 def estimator(data):
     return data
