@@ -1,6 +1,7 @@
 class severeImpact:
-    def __init__(self, reportedCases):
-        self.reportedCases = reportedCases
+    def __init__(self):
+        pass
+#        self.reportedCases = reportedCases
         
     def currentlyInfected(self,days,weeks,months):
         reportedCases = int(input("Reported cases: "))
