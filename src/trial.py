@@ -19,9 +19,11 @@ class severeImpact:
                 days = weeks*7 + days
         elif months == 1:
             days = months*30 + weeks*7 +days
+        elif months >= 0:
+            days = months*0 + weeks*7 + days
         infectionByRequestTime = currentlyInfected* 512 #28days
-        days = days//3
-        pwr = 2**days
+        day = days//3
+        pwr = 2**day
         infectionByRequestTime= currentlyInfected*pwr
 
         return "Currently Infected is {} cases.".format(currentlyInfected), "and the rate of cases by the inputed period of {} days would be: {} cases".format(days,infectionByRequestTime)
