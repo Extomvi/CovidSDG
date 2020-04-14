@@ -1,6 +1,5 @@
 import json
 import pprint
-from flask import Flask, request, jsonify
 #function for estimation
 def estimator(data):
   
