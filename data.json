@@ -1,0 +1,34 @@
+{
+    "data": {
+        "region": {
+            "name": "Africa",
+            "avgAge": 19.7,
+            "avgDailyIncomeInUSD": 5,
+            "avgDailyIncomePopulation": 0.71
+        },
+        "periodType": "days",
+        "timeToElapse": 58,
+        "reportedCases": 674,
+        "population": 66622705,
+        "totalHospitalBeds": 1380614
+    },
+    "estimate": {
+        "impact": {
+            "currentlyInfected": 27470,
+            "infectionByRequestedTime": 112517120,
+            "severeCasesByRequestedTime": 16877568,
+            "hospitalBedsByRequestedTime": -168639962,
+            "casesForICUByRequestedTime": 5625856,
+            "casesForVentilatorsByRequestedTime": 2250342,
+            "dollarsInFlight": 12484899635.2
+        },
+        "severImpact": {
+            "currentlyInfected": 137350,
+            "infectionByRequestedTime": 562585600,
+            "severeCasesByRequestedTime": 84387840,
+            "hospitalBedsByRequestedTime": -84150234,
+            "casesForICUByRequestedTime": 28129280,
+            "casesForVentilatorsByRequestedTime": 11251712,
+            "dollarsInFlight": 62424498176
+        }
+    }
