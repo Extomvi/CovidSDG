@@ -1,5 +1,6 @@
 import json
 import pprint
+from flask import Flask, request, jsonify
 #function for estimation
 def estimator(data):
   
@@ -59,7 +60,7 @@ def estimator(data):
                               (data['region']['avgDailyIncomePopulation']) * 
                               (data['region']['avgDailyIncomeInUSD']) / requestedTime)})
   
-   
+  
   return {
             'data' : data,
             'impact': impact,
@@ -85,7 +86,6 @@ def main():
   result = estimator(input_data)
   # print(result)
   pprint.pprint(result)
-    
-    
+
 if __name__ == "__main__":
   main()

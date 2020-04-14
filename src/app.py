@@ -1,9 +1,23 @@
 from flask import Flask, request, jsonify
 from flask_restful import Resource, Api 
-#from estimator import impact
-
+from estimator import estimator
 import json
 
+import json
+new = estimator({   
+              'region': {       
+                'name': "Africa",       
+                'avgAge': 19.7,       
+                'avgDailyIncomeInUSD': 5,       
+                'avgDailyIncomePopulation': 0.71     
+                },   
+              'periodType': "days",   
+              'timeToElapse': 58,   
+              'reportedCases': 343,   
+              'population': 66622705,   
+              'totalHospitalBeds': 1380614 
+              }  
+        )
 app = Flask(__name__)
 
 @app.after_request
@@ -13,9 +27,10 @@ def add_headers(response):
     response.headers['Access-Control-Allow-Methods']=  "POST, GET, PUT, DELETE, OPTIONS"
     return response
 
-@app.route('/<name>', methods=['GET'])
-def hello(name):
-    return "Hello! This is a {}.".format(name) 
+@app.route('/api/v1/on-covid-19', methods=['GET'])
+def hello():
+    return new
+
 
 if __name__ == "__main__":
 #    impact()
