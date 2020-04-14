@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_restful import Resource, Api 
 #from estimator import impact
-from trial import severeImpact
 
 import json
 
