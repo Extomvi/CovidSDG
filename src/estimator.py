@@ -10,9 +10,6 @@ class covid19ImpactEstimator:
     def _str_(self):
         return "currently Infected people are : {}".format(self.currentlyInfected)
 
-#new = covid19ImpactEstimator()
-#print(new.currentlyInfected)
-
 class impact(covid19ImpactEstimator):
 #      reportedCases = input("To calculate for the impact, " + "\nTotal Reported Cases :")
 #      reportedCases = int(reportedCases)
@@ -23,7 +20,7 @@ new = impact()
 print("Number of currently impacted cases are {} cases.".format(new.currentlyInfected))
 print("Total cases by the requested date of 28 days would be: {} cases".format(new.infectionByRequestTime))
 
-            
+
 
 '''
 def estimator(data):
