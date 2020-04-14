@@ -1,13 +1,13 @@
 import unittest
+from unittest.mock import patch
 import math
+from unittest import mock
 from unittest import TestCase
-from estimator import severeImpact
 
 
 class EstimatorTest(unittest.TestCase):
-            
-    def test_power(self):
-        self.assertEquals(pow(5, 2), 25)
+    def addition(self):
+        self.assertEqual((5+5), 10)
 
  
 if __name__ == '__main__':
