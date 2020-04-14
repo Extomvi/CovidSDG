@@ -16,7 +16,7 @@ def estimator(data):
   impact = { 'currentlyInfected' : int(reportedCases * 10)}
   
   impact.update({'infectionsByRequestedTime' : int(impact['currentlyInfected'] *
-                                 (2 ** int(requestedTime/3)))})
+                                 (2 ** int(requestedTime//3)))})
   
   impact.update({'severeCasesByRequestedTime' : int(0.15 * 
                                  impact['infectionsByRequestedTime'])})
@@ -40,7 +40,7 @@ def estimator(data):
   severeImpact = { 'currentlyInfected' : int(reportedCases * 50)}
   
   severeImpact.update({ 'infectionsByRequestedTime' : int(severeImpact['currentlyInfected'] *
-                              (2 ** int(requestedTime/3)))})
+                              (2 ** int(requestedTime//3)))})
   
   severeImpact.update({ 'severeCasesByRequestedTime' : int(0.15 * 
                               severeImpact['infectionsByRequestedTime'])})
