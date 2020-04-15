@@ -3,6 +3,7 @@ from flask_restful import Resource, Api
 from estimator import estimator
 import json
 
+'''
 import json
 new = estimator({   
               'region': {       
@@ -18,6 +19,8 @@ new = estimator({
               'totalHospitalBeds': 1380614 
               }  
         )
+'''
+
 app = Flask(__name__)
 
 @app.after_request
@@ -29,7 +32,7 @@ def add_headers(response):
 
 @app.route('/api/v1/on-covid-19', methods=['GET'])
 def hello():
-    return new
+    return "Welcome to my covid19-estimator application"
 
 
 if __name__ == "__main__":
