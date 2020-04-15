@@ -17,6 +17,20 @@ def add_headers(response):
 def hello():
     return "<h1>Welcome to my covid19-estimator application</h1>"
 
+new = estimator({   
+              'region': {       
+                'name': "Africa",       
+                'avgAge': 19.7,       
+                'avgDailyIncomeInUSD': 5,       
+                'avgDailyIncomePopulation': 0.71     
+                },   
+              'periodType': "days",   
+              'timeToElapse': 58,   
+              'reportedCases': 373,   
+              'population': 66622705,   
+              'totalHospitalBeds': 1380614 
+              })
 
 if __name__ == "__main__":
+    estimator(new)
     app.run(debug=True)
