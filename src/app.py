@@ -13,7 +13,7 @@ def add_headers(response):
     response.headers['Access-Control-Allow-Methods']=  "POST, GET, PUT, DELETE, OPTIONS"
     return response
 
-@app.route('/api/v1/on-covid-19', methods=['GET'])
+@app.route('/', methods=['GET'])
 def hello():
     return "<h1>Welcome to my covid19-estimator application</h1>"
 
