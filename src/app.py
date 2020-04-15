@@ -3,23 +3,6 @@ from flask_restful import Resource, Api
 from estimator import estimator
 import json
 
-'''
-import json
-new = estimator({   
-              'region': {       
-                'name': "Africa",       
-                'avgAge': 19.7,       
-                'avgDailyIncomeInUSD': 5,       
-                'avgDailyIncomePopulation': 0.71     
-                },   
-              'periodType': "days",   
-              'timeToElapse': 58,   
-              'reportedCases': 343,   
-              'population': 66622705,   
-              'totalHospitalBeds': 1380614 
-              }  
-        )
-'''
 
 app = Flask(__name__)
 
@@ -36,6 +19,4 @@ def hello():
 
 
 if __name__ == "__main__":
-#    impact()
-#    severeImpact.currentlyInfected(1,1,1,1)
     app.run(debug=True)

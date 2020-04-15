@@ -77,7 +77,7 @@ def main():
                 },   
               'periodType': "days",   
               'timeToElapse': 58,   
-              'reportedCases': 343,   
+              'reportedCases': 373,   
               'population': 66622705,   
               'totalHospitalBeds': 1380614 
               }
