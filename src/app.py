@@ -15,7 +15,7 @@ def add_headers(response):
 
 @app.route('/api/v1/on-covid-19', methods=['GET'])
 def hello():
-    return "Welcome to my covid19-estimator application"
+    return "<h1>Welcome to my covid19-estimator application</h1>"
 
 
 if __name__ == "__main__":
